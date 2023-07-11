@@ -14,7 +14,7 @@ ua = UserAgent()
 
 headers = {
     'Content-Type': 'application/json',
-    'Cookie': 'kpf=PC_WEB; clientid=3; did=web_bf3927e5bc13e18ab1bd1b46f5770d41; userId=2906121638; kuaishou.server.web_st=ChZrdWFpc2hvdS5zZXJ2ZXIud2ViLnN0EqABrRPgB9AvwZ7lfhHAc2pXIJ5kYnzeXrEpZ4jxqkdTGHiD-gvg0Iu6T82kJzjDFD9TRMIPl1Yhe3eeEZKnZo6S4MDuHlDzsHGsLcEjpSVLMXzkAZhmRcI5d0Q7Fl2R5uC7AoQF_Lnny4yZ3VUvwxX5YwQRF0bqUmWvMV8VitdjfHWOKKgM6_lAVvvllsGKKKk7lE_T8qmH6gNYUbDb1NtgZxoSsguEA2pmac6i3oLJsA9rNwKEIiBJnpNXE07Y3wjbuQfcgUJveaHJktWxpHAf6RwC1rqgBSgFMAE; kuaishou.server.web_ph=02045a8e47f6125de45ad04a75ab2d406e8d; kpn=KUAISHOU_VISION',
+    'Cookie': '',  #add cookie
     'Host': 'www.kuaishou.com',
     'Referer': 'https://www.kuaishou.com/search/video?searchKey=',
     'User-Agent': ua.random
@@ -33,7 +33,7 @@ if __name__ == "__main__":
         os.mkdir(dirpath)
         os.mkdir(dirpath + '/csv'.format(today_date))
 
-    index_txt = r'C:\Users\cj\Desktop\ks_index.txt'
+    index_txt = r'C:\Users\xxx\Desktop\ks_index.txt'
     index_list = []
     with open(index_txt, 'r', encoding='utf-8') as f:
         lines = f.readlines()
